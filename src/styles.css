@@ -28,8 +28,9 @@ form{
 .hint{
 margin-top:5px;
 opacity:0.6;
-font-sized:14px;
+font-size: 13px;
 }
+
 .poem-topic{
     padding: 13px;
     line-height: 1.5;
@@ -47,7 +48,7 @@ font-sized:14px;
     line-height: 1.5;
     font-size: 16px;
     color:white;
-    margin-left:10px;
+    margin-left:8px;
 
 }
 
