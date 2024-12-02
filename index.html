@@ -15,11 +15,14 @@
     <h1>AI French Poem Generator</h1>
     <header>
       <main>
+	<div class="form-container">
         <form id="poem-generator-form">
-          <input type="text" class="poem-topic" placeholder="Enter the topic of the French poem" autofocus required autocomplete="off">
+          <input type="text" class="poem-topic" placeholder="Enter the topic of a French poem..." autofocus required autocomplete="off">
           <input type="submit" class="submit-button">
         </form>
-        <div class="poem" id="poem">
+	<div class="hint">i.e: flower,paris or cheese</div>
+	</div>
+        <div class="poem hidden" id="poem">
           
         </div>
 

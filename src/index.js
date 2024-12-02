@@ -16,10 +16,16 @@ function poemGenerator(event) {
 
   let poemElement=document.querySelector(".poem-topic");
   console.log(poemElement.value);
+
+  let poemDisplayElement=document.querySelector("#poem");
+  poemDisplayElement.classList.remove("hidden");
+  
+  poemDisplayElement.innerHTML=`<div class="generating">Generating a French poem about ${poemElement.value}</div>`;
   
   let apiKey="20468a8333bf53tb20f4666cf98f1o0b";
   let prompt=`User instructions: Generate a french poem about ${poemElement.value}`;
   let context="You are a romatic poem expert and love to write beautiful short poems.Your mission is to generate a 4 line poem and each line </br> elment and at the end of the poem 'Shecodes AI' with </strong> element.Not need to show the poem title";
+
   let apiURL=`https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 axios.get(apiURL).then(showPoem);
   

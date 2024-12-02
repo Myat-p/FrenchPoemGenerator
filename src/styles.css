@@ -14,18 +14,27 @@ a{
     margin: 80px auto;
     width: 650px;  
 }
-
-form{
-    background-color: white;
-    padding:30px;
+.form-container{
+ background-color: white;
+    padding:20px;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+form{
+   display:flex;
+}
+
+.hint{
+margin-top:5px;
+opacity:0.6;
+font-sized:14px;
 }
 .poem-topic{
     padding: 13px;
     line-height: 1.5;
     width: 75%;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 30px;
     border: 1px solid grey;
 }
@@ -36,15 +45,16 @@ form{
     background-color: #885df1;
     width: 100px;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 16px;
     color:white;
 
 }
+
 .poem{
     background-color: white;
     padding: 20px 30px;
     line-height: 2;
-    font-size: 14px;
+    font-size: 16px;
     border-radius:5px;
     border-left: 3px solid #885df1;
 }
@@ -52,8 +62,25 @@ form{
 color: #885df1;
 }
 
+.hidden{
+display:none;
+}
+
 footer{
     font-size: 13px;
     margin-top: 30px;
     text-align: center;
 }
+
+.generating{
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.2; }
+}
+
